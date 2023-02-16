@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slovo1">Сымыыт</string>
+    <string name="slovo2">Мас</string>
+    <string name="slovo3">От</string>
+    <string name="slovo4">Ынах</string>
+    <string name="slovo5">Алаас</string>
+    <string name="slovo6">Сылгы</string>
+    <string name="slovo7">Ийэ</string>
+    <string name="slovo8">Эбээ</string>
+    <string name="slovo9">Олоппос</string>
+    <string name="slovo10">Орон</string>
+    <string name="slovo11">Дьиэ</string>
+
+    <string name="russlovo1">Яйцо</string>
+    <string name="russlovo2">Дерево</string>
+    <string name="russlovo3">Трава</string>
+    <string name="russlovo4">Корова</string>
+    <string name="russlovo5">Поле</string>
+    <string name="russlovo6">Лошадь</string>
+    <string name="russlovo7">Мама</string>
+    <string name="russlovo8">Бабушка</string>
+    <string name="russlovo9">Стул</string>
+    <string name="russlovo10">Кровать</string>
+    <string name="russlovo11">Дом</string>
+
+
+</resources>
