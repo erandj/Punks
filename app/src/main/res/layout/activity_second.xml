@@ -6,27 +6,147 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="110dp"
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="73dp"
-        android:backgroundTint="@color/teal_700"
-        android:text="Верно"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="376dp"
+        android:background="#00FFFFFF"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/otmena" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_denied"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="73dp"
-        android:layout_marginTop="360dp"
-        android:backgroundTint="@color/design_default_color_error"
+        android:layout_marginTop="380dp"
+        android:backgroundTint="@color/denied"
         android:text="Неверно"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/btn_agree"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_agree"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="84dp"
+        android:backgroundTint="@color/agree"
+
+        android:text="Верно"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_denied"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#EFEFEF"
+        android:text="Ответить"
+        android:textColor="@color/textcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_agree" />
+
+    <TextView
+        android:id="@+id/textvopros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="121dp"
+        android:text="Правильный ли перевод?"
+        android:textColor="#1A2526"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBear"
+        android:layout_width="170dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textvopros"
+        app:srcCompat="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="368dp"
+        android:layout_height="513dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgbg" />
+
+    <TextView
+        android:id="@+id/textYkt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Бар мантан"
+        android:textColor="#1A2526"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageBear" />
+
+    <TextView
+        android:id="@+id/textRus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Уйди"
+        android:textColor="#1A2526"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textYkt" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarTimer"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="368dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textvopros"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

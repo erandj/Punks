@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -14,18 +16,30 @@ public class MainActivity extends AppCompatActivity {
 
     public TextView tv;
     ProgressBar progressBar;
-    AppCompatButton btnStartTimer;
+    Button btnStartTimer;
     int countprogressBar = 0;
-
-
+    ImageButton btn_Back;
 
    @Override
    public void onCreate(Bundle savedInstanceState)
    {
+       getSupportActionBar().hide();
 
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
        progressBar = findViewById(R.id.progressBar);
+       btn_Back = findViewById(R.id.imageButton);
+       tv = findViewById(R.id.textSeconds);
+       btnStartTimer = findViewById(R.id.btnStartTimer);
+
+
+       btn_Back.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, FirstActivity.class);
+               startActivity(intent);
+           }
+       });
 
 
 
@@ -35,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
            public void onTick(long l) {
                countprogressBar++;
                progressBar.setMax(5);
-               progressBar.setProgress((int) l/1000);
+               progressBar.setProgress(countprogressBar);
 
                tv.setText(String.valueOf(l/1000));
 
@@ -49,8 +63,7 @@ public class MainActivity extends AppCompatActivity {
            }
        };
 
-       tv = findViewById(R.id.textSeconds);
-       btnStartTimer = findViewById(R.id.btnStartTimer);
+
        btnStartTimer.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
@@ -58,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                btnStartTimer.setVisibility(View.INVISIBLE);
            }
        });
+
+
 
 
 

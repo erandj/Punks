@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="455dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="-70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/toolbar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="265dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Перевод слов на время"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="119dp"
+        android:layout_height="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/happybear" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="362dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgbg" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="329dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="В этом задании вам предстоит определить правильный ли перевод текста"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="362dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/maincolor"
+        android:text="Начать"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="362dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
