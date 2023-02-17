@@ -119,7 +119,7 @@ public class SecondActivity extends AppCompatActivity {
                 final String getAnswer = slovaList.get(i).getAnswer();
 
                 if (getUserSelectedAnswer.equals(getAnswer)) {
-                    correctAnswer = correctAnswer + 1;
+                    correctAnswer++;
                 }
 
             }
