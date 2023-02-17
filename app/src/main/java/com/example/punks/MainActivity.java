@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
        super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_main);
        progressBar = findViewById(R.id.progressBar);
-       btn_Back = findViewById(R.id.imageButton);
+       btn_Back = findViewById(R.id.btn_back3);
        tv = findViewById(R.id.textSeconds);
        btnStartTimer = findViewById(R.id.btnStartTimer);
 

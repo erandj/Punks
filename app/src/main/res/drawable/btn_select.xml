@@ -10,7 +10,7 @@
 
 
                 <solid android:color="@color/agree"/>
-                <corners android:radius="10dp"/>
+                <corners android:radius="25dp"/>
                 <stroke android:color="@color/select_agree"
                     android:width="8dp"/>
 
