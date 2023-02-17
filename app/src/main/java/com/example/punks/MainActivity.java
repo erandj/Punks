@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
    @Override
    public void onCreate(Bundle savedInstanceState)
    {
+       //Эллэй крутой
        getSupportActionBar().hide();
 
        super.onCreate(savedInstanceState);
